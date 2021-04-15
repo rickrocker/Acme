@@ -1,0 +1,52 @@
+﻿.register-button-group {
+    display: grid;
+    grid-auto-columns: minmax(min-content,400px);
+    grid-auto-rows: min-content;
+    grid-gap: 1.5em;
+    justify-content: center;
+}
+
+.register-or {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--gray);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    color: var(--gray);
+    font-size: 0.8rem;
+}
+
+    .register-or span {
+        background: #fff;
+        padding: 0 1em;
+    }
+
+
+.button-register-email {
+    position: relative;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+}
+
+    .button-register-email:hover,
+    .button-register-email:focus,
+    .button-register-email:active {
+        background: var(--lightGray);
+    }
+
+    .button-register-email > .register-envelope {
+        position: absolute;
+        font-size: 22px;
+        color: var(--gray);
+        padding-right: 10px;
+        vertical-align: middle;
+        top: 13px;
+        left: 12px;
+    }
+
+    .button-register-email > span {
+        display: inline;
+        vertical-align: middle;
+    }
+
+

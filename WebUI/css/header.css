@@ -1,0 +1,47 @@
+﻿.button-notification {
+    display: inline-block;
+    position: relative;
+    padding: 2px 5px;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.badge-notification {
+    background-color: var(--badgeColor);
+    border-radius: 2px;
+    color: white;
+    padding: 1px 3px;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-icon {
+    font-size: 1.2rem;
+  
+}
+
+.header-profile {
+    padding-right: 1rem;
+}
+
+    .header-profile img {
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /*.header-profile svg {
+        fill: #fff;
+    }*/
+
+@media (min-width: 768px) {
+    .header-profile svg {
+        fill: var(--gray);
+    }
+}
+
+
+

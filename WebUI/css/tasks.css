@@ -1,0 +1,46 @@
+﻿.task-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.task-header {
+    font-weight: 600;
+}
+
+.task-name {
+    grid-column: 1;
+}
+
+.task-expires {
+    grid-column: 2;
+}
+
+.task-detail {
+    display: block;
+}
+
+    .task-detail > div {
+        padding-bottom: 1rem;
+    }
+
+    .task-detail label {
+        display: block;
+        font-weight: 600;
+    }
+
+    .task-detail textarea {
+        width: 100%;
+    }
+
+
+.tasks-img-preview {
+    max-width: 70vw;
+}
+
+.task-detail-title {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a986a18695314568a40dd020a39b5493" Name="Diagram1">
+        <EntityTypeShape EntityType="AcmeModel.AspNetRole" Width="1.5" PointX="0.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.AspNetUser" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.Company" Width="1.5" PointX="6" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.CompaniesUser" Width="1.5" PointX="8.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.Currency" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.Error" Width="1.5" PointX="5.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.Message" Width="1.5" PointX="5.25" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.NotificationDelivery" Width="1.5" PointX="12.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.NotificationMethod" Width="1.5" PointX="10.5" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.Notification" Width="1.5" PointX="7.5" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.NotificationTemplate" Width="1.5" PointX="8.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.PasswordResetRequest" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.sysdiagram" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.Task" Width="1.5" PointX="8.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.TaskStatus" Width="1.5" PointX="6" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.TaskType" Width="1.5" PointX="6" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.UserLog" Width="1.5" PointX="5.25" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.UserPaymentInfo" Width="1.5" PointX="5.25" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.UserProfile" Width="1.5" PointX="10.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.vw_Messages" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.vw_Notifications" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.vw_NotificationsMessages" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.vw_Tasks" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcmeModel.vw_User_UserProfile" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="AcmeModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_CompaniesUsers_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Errors_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_LoginsUsers_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Messages_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Messages_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Notifications_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Tasks_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_UserPaymentInfo_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_UserProfiles_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_CompaniesUsers_Companies" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Notifications_Messages" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_NotificationDeliveries_NotificationMethods" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_NotificationDeliveries_Notifications" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_UserProfiles_NotificationMethods" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Notifications_Tasks" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_NotificationTemplates_TaskTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Tasks_TaskStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.FK_Tasks_TaskTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="AcmeModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

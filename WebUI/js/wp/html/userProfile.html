@@ -1,0 +1,75 @@
+﻿<div id="divProfile1" class="form-group form-group-md-width">
+    <div id="divEmail" style="display:none">
+        <label for="txtEmail">Email</label>
+        <input id="txtEmail" type="email" />
+    </div>
+    <div>
+        <label for="txtFirstName">First Name</label>
+        <input id="txtFirstName" type="text" />
+    </div>
+    <div>
+        <label for="txtLastName">Last Name</label>
+        <input id="txtLastName" type="text" />
+    </div>
+    <div>
+        <label for="txtPhone">Phone Number</label>
+        <input id="txtPhone" type="text" />
+    </div>
+    
+</div>
+
+<div id="divProfile2" class="form-group form-group-md-width" style="display:none">
+    <div>
+        <!--<label>Gender</label>
+    <label style="font-weight:unset">
+        <input type="radio" name="rbGender" id="rbFemale" value="Female" />Female
+    </label>
+    <label style="font-weight:unset">
+        <input type="radio" name="rbGender" id="rbMale" value="Male" />Male
+    </label>
+    <label style="font-weight:unset">
+        <input type="radio" name="rbGender" id="rbOther" value="Other" />Other
+    </label>-->
+        <label for="selGender">Gender</label>
+        <select id="selGender" name="selGender" >
+            <option value="">-- Choose an Option --</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div>
+        <label for="divDOB">Date of Birth</label>
+        <div id="divDOB"></div>
+    </div>
+    <!--<div>
+        <label for="txtAddress1">Address</label>
+        <input id="txtAddress1" type="text" />
+    </div>
+    <div>
+        <label for="txtAddress2">Address 2</label>
+        <input id="txtAddress2" type="text" />
+    </div>-->
+
+    <div>
+        <label for="selCountry">Country</label>
+        <select id="selCountry" name="selCountry" />
+    </div>
+    <div>
+        <label for="selState">State</label>
+        <select id="selState" />
+    </div>
+    <div>
+        <label for="txtCity">City</label>
+        <input id="txtCity" type="text" />
+    </div>
+    <div>
+        <label for="txtZip">Zip (Postal) Code</label>
+        <input id="txtZip" type="text" />
+    </div>
+</div>
+
+<div>
+    <button id="btnSaveUserProfile" class="button button-blue" type="submit">Save</button>
+</div>
+

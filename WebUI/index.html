@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript">
+        //-- DEV --
+        //const BaseUrl = "http://localhost:60125";
+        const BaseUrl = "https://localhost:44385/";
+        //const WebAPIUrl = "http://localhost:50850";
+        const WebAPIUrl = "https://localhost:44349/";
+        //const FileServerUrl = "https://localhost:52737";
+        const FileServerUrl = "https://localhost:44367";
+        const Version = Date.now();
+        //-- STAGE --
+        //const BaseUrl = "https://stage.influcaster.com";
+        //const WebAPIUrl = "https://goapi.influcaster.com";
+        //const FileServerUrl = "https://gofiles.influcaster.com";
+        //const Version = Date.now();
+        //-- PROD --
+        //const BaseUrl = "https://go.influcaster.com";
+        //const WebAPIUrl = "https://goapi.influcaster.com";
+        //const FileServerUrl = "https://gofiles.influcaster.com";
+        //const Version = Date.now();
+
+    </script>
+
+    <link rel="shortcut icon" href="#">
+    <link href="/assets/fontawesome/css/all.min.css" rel="stylesheet" />
+
+    <!-- BUNDLED CSS FILES -->
+    <link href="/assets/DataTables/datatables.min.css" rel="stylesheet" />
+    <link href="/css/icons.css" rel="stylesheet" />
+    <link href="/css/reset.css" rel="stylesheet" />
+    <link href="/css/pageLayout.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="/css/buttons.css" rel="stylesheet" />
+    <link href="/css/modal.css" rel="stylesheet" />
+    <link href="/css/contentLayouts.css" rel="stylesheet" />
+    <link href="/css/header.css" rel="stylesheet" />
+    <link href="/css/register.css" rel="stylesheet" />
+    <link href="/css/login.css" rel="stylesheet" />
+    <link href="/css/datatableOverride.css" rel="stylesheet" />
+
+    <!--<link href="/css/bundle.min.css?v=1.05" rel="stylesheet" />-->
+    <!-- BUNDLED JS FILES -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/DataTables/datatables.min.js"></script>
+    <script src="/js/GlobalVars.js"></script>
+    <script src="/js/Util.js"></script>
+    <script src="/js/AuthManager.js"></script>
+    <script src="/js/PageManager.js"></script>
+    <script src="/js/wp/MessageSend.js"></script>
+    <script src="/js/layout/Header.js"></script>
+    <script src="/js/layout/Nav.js"></script>
+    <script src="/js/wp/ResetPassword.js"></script>
+    <script src="/js/wp/Notifications.js"></script>
+    <script src="/js/wp/Login.js"></script>
+    <script src="/js/wp/Register.js"></script>
+
+    <script src="/js/components/DatePicker.js"></script>
+    <script src="/js/components/CountryStateDropdowns.js"></script>
+    <script src="/js/components/Avatar.js"></script>
+    <script src="/js/components/AvatarUpload.js"></script>
+    <script src="/js/wp/Login.js"></script>
+    <script src="/js/wp/Register.js"></script>
+    <script src="/js/wp/UserProfile.js"></script>
+
+    <script src="/js/Init.js"></script>
+
+    <!--<script src="/js/bundle.min.js?v=1.05"></script>-->
+
+    <title>ACME - .NET Framework SaaS Template</title>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Init.Start();
+        });
+
+/**/</script>
+
+    <div id="divPage" class="page">
+        <div id="divHeader" class="header"></div>
+
+        <!--<div class="header-shadow"></div>-->
+
+        <div id="divLogo" class="logo">
+            <!-- <div class="logo-icon"><a onclick="window.location.href = '/'"><img src="images/icons/influcaster_logo.png" alt="Influcaster logo" /></a></div>-->
+            <div class="logo-text">
+                <a onclick="window.location.href = '/'">ACME</a>
+                <div style="font-style: oblique; font-size: .75rem; text-align: right;">.NET SaaS Template</div>
+            </div> 
+        </div>
+
+        <div id="divNav" class="nav"></div>
+
+        <div id="divMain" class="content">
+            
+        </div>
+
+        <div id="divModalPlaceHolder" class="modal-placeholder">
+        </div>
+
+        <!--<div id="divFooter" class="footer">
+            <div class="footer-1">Footer 1</div>
+            <div class="footer-2">Footer 2</div>
+        </div>-->
+
+    </div>
+
+</body>
+</html>

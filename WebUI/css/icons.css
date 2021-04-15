@@ -1,0 +1,26 @@
+﻿.fa-user-check {
+    color: var(--green);
+    font-size: .75rem;
+    margin-right: .4rem;
+}
+
+.fa-user-lock {
+    color: var(--mediumDarkBlue);
+    font-size: .75rem;
+    margin-right: .4rem;
+}
+
+.fa-heart {
+    color: var(--pink);
+    font-size: .75rem;
+    margin-right: .4rem;
+}
+
+.not-registered {
+    color: var(--mediumDarkGray);
+}
+
+.fa-instagram {
+    color: var(--mediumGray);
+    margin-right: .2rem;
+}

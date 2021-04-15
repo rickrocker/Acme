@@ -1,0 +1,418 @@
+﻿:root {
+    --headerHeight: 3rem;
+    --footerHeight: 1.2rem;
+    --navBackgroundColor: rgb(58,68,82);
+    --darkestBlue: rgb(2, 24, 44);
+    --darkBlue: rgb(2, 24, 44);
+    --mediumDarkBlue: rgb(2, 44, 87);
+    --blue: rgb(3, 64, 120);
+    --brightBlue: rgb(5, 92, 173);
+    --brighterBlue: rgb(8, 112, 209);
+    --brightestBlue: rgb(0, 131, 255);
+    --lightBlue: rgb(224, 240, 255);
+    --lighterBlue: rgb(237, 246, 255);
+    --red: rgb(209, 0, 0);
+    --brightRed: rgb(225, 0, 0);
+    --pink: rgb(209, 0, 126);
+    --yellow: rgb(255, 190, 11);
+    --brightYellow: rgb(255, 213, 0);
+    --green: rgb(71, 160, 37);
+    --darkGray: rgb(34,41,51);
+    --mediumDarkGray: rgb(51,60,72);
+    --gray: rgb(105, 111, 119);
+    --lightMediumGray: rgb(162, 167, 174);
+    --lightGray: rgb(218, 222, 230);
+    --lighterGray: rgb(230,233,239);
+    --lightestGray: rgb(241,244,248);
+    --offWhite: rgb(250,252,254);
+    --badgeColor: rgb(250,62,62);
+}
+
+* {
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    /*-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;*/
+    table-layout: fixed;
+}
+
+a {
+    cursor: pointer;
+    color: var(--brightBlue);
+    text-decoration: none;
+}
+
+    a:disabled {
+        color: var(--lightBlue);
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.jumbotron {
+    background-color: var(--lightestGray);
+    padding: 1rem;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.jumboset {
+    background-color: var(--offWhite);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--lightMediumGray);
+    width: 100%;
+}
+
+input[type=file] { /* Remove file name next to file upload button */
+    color: transparent;
+}
+
+
+input, select, textarea {
+    text-align: left;
+    border-radius: 4px;
+    padding: 0.38rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+input, select {
+    max-height: 4rem;
+    white-space: nowrap;
+}
+
+    /* Remove up/down arrows for input type = number */
+    /* For Firefox */
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+    /* Webkit browsers like Safari and Chrome */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+
+    input:read-only,
+    textarea:read-only {
+        border: none;
+    }
+
+    input:-moz-read-only { /* For Firefox */
+        border: none;
+    }
+
+
+/*     FORM GROUP   */
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+}
+
+    .form-group > div {
+        padding-bottom: 1rem;
+    }
+
+        .form-group > div div:not(:last-child) {
+            padding-bottom: 1rem;
+        }
+
+
+    .form-group div > * {
+        display: block;
+    }
+
+    .form-group div > select {
+        display: inline-block;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--darkGray);
+        margin-bottom: 3px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: baseline;
+    }
+
+    .form-group .label-checkbox {
+        font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+    }
+
+        .form-group input:disabled,
+        .form-group select:disabled,
+        .form-group textarea:disabled {
+            border-radius: 0px;
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+            background-color: inherit;
+            padding: none;
+            resize: none;
+            overflow: hidden;
+        }
+
+
+
+    .form-group > div > button {
+        /*margin-top: 15px;*/
+        text-align: center;
+    }
+
+.form-element-checkbox {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    grid-gap: .8rem;
+    align-items: end;
+    margin-bottom: -0.5rem;
+}
+
+    .form-element-checkbox > input {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .form-element-checkbox > label {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+.form-group-md-width {
+    max-width: 300px;
+}
+
+    .form-group-md-width input,
+    .form-group-md-width select,
+    .form-group-md-width textarea {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+.form-group-lg-width {
+    max-width: 500px;
+}
+
+    .form-group-lg-width input,
+    .form-group-lg-width select,
+    .form-group-lg-width textarea {
+        width: 100%;
+        max-width: 500px;
+    }
+
+.form-instructions {
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.form-error {
+    font-size: 1rem;
+    padding-top: .5rem;
+    color: var(--red);
+    /*font-weight: 600;*/
+}
+
+
+/*------ TOOLTIP  ------*/
+.tooltip {
+    position: relative;
+    display: inline;
+    text-align: left;
+    color: var(--brightBlue);
+    font-size:1.2rem;
+    padding-left: .5rem;
+    /*background-color: var(--brightBlue);*/
+}
+
+
+    .tooltip .tooltip-text {
+        visibility: hidden;
+        background-color: var(--brightBlue);
+        color: #fff;
+        text-align: left;
+        padding: 8px 8px;
+        border-radius: 4px;
+        position: absolute;
+        z-index: 1;
+        width: 400px;
+        bottom: 102%;
+        /*top: -3rem;*/
+        /*right: 105%;*/
+        left: -60px;
+        /*margin-left: -225px;*/
+        max-width: 80vw;
+        font-weight: 500;
+        font-size: .9rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltip-text {
+        visibility: visible;
+    }
+
+/*------ DROPDOWN  ------*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    /*box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);*/
+    border: 1px solid var(--lightestGray);
+    z-index: 999;
+}
+
+.dropdown-content-right {
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black; 
+    padding: 12px 16px;
+    color: var(--gray);
+    display: block;
+    text-align: left;
+}
+
+    .dropdown-content a:hover {
+        background-color: var(--lightGray);
+    }
+
+/*.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+.card {
+    display: grid;
+    grid-auto-rows: max-content;
+    align-self: self-start;
+    background-color: #fff;
+    /*height: max-content;*/
+    padding: 0.7rem;
+    margin: 0.7rem 0.7rem 0rem 0.7rem;
+    border: 1px solid var(--lightGray);
+    grid-gap: 1rem;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    grid-row: 1;
+    grid-column: 1 / end;
+    font-size: 1rem;
+    color: var(--darkGray);
+    font-weight: 600;
+    margin-bottom: .15rem;
+    background: var(--lightestGray);
+    padding: .5rem;
+    border-bottom: solid 1px var(--lightGray);
+}
+
+.card-2-col-layout {
+    grid-template-columns: 1fr;
+}
+
+.card-col-1 {
+    grid-column: 1;
+}
+
+.card-col-2 {
+    grid-column: 1;
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 1rem;
+        margin: 1rem 1rem 0rem 1rem;
+    }
+
+    .card-2-col-layout {
+        grid-template-columns: max-content 1fr;
+    }
+
+        .card-2-col-layout > div:nth-child(2) {
+            padding-left: 2rem;
+        }
+
+    .card-col-1 {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .card-col-2 {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+}
+
+.input-limit-width {
+    max-width: 300px;
+}
+
+
+/*------ TABS  ------*/
+.tab {
+    overflow: hidden;
+    border: 1px solid var(--lightGray);
+    background-color: var(--lightestGray);
+}
+
+
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 1rem 1rem;
+    }
+
+
+        .tab button:hover {
+            background-color: var(--lighterGray);
+        }
+
+        .tab button.active {
+            background-color: var(--lightGray);
+        }
+
+.tabcontent {
+    display: none;
+    padding: 1rem .7rem;
+    border: 1px solid var(--lightGray);
+    border-top: none;
+}

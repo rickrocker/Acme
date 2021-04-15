@@ -1,0 +1,45 @@
+﻿.notification-grid {
+    display: grid;
+    grid-template-columns: auto 1fr 3fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.notification-avatar {
+    grid-column: 1;
+}
+
+.notification-sender {
+    grid-column: 2;
+}
+
+.notification-text {
+    grid-column: 3;
+    padding-left: 1rem;
+}
+
+.notification-task {
+    grid-column: 4;
+}
+
+.notification-subject {
+    font-weight: 600;
+}
+
+.notification-from-name {
+    font-weight: 600;
+}
+
+.notification-from-company {
+    font-weight: 500;
+}
+
+.message-from-self {
+    padding-bottom: .75rem;
+    text-align: right;
+}
+
+.message-from-other {
+    padding-bottom: .75rem;
+}

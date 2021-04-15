@@ -1,0 +1,145 @@
+﻿.button {
+    display: inline-block;
+    white-space: nowrap;
+    max-height: 4em;
+    padding: 0.38rem 0.75rem;
+    outline: 0;
+    border-radius: 4px;
+    border: 1px solid var(--darkGray);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--darkGray);
+    box-sizing: border-box;
+    user-select: none;
+}
+
+    .button:hover,
+    .button:active {
+        /*color: #fff;*/
+        background-color: var(--lightestGray);
+        /*border-color: var(--lightGray);*/
+    }
+
+    .button:disabled {
+        opacity: .5;
+    }
+
+.button-full-width {
+    width: 100%;
+    font-size: .95rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.button-gray-outline {
+    background: #fff;
+    color: var(--gray);
+    border: 1px solid var(--gray);
+}
+
+    .button-gray-outline:hover,
+    .button-gray-outline:active {
+        background: var(--lightestGray);
+    }
+
+
+.button-blue {
+    background: var(--brightBlue);
+    border: 1px solid var(--brightBlue);
+    color: #fff;
+}
+
+    .button-blue:hover,
+    .button-blue:active {
+        background: var(--brighterBlue);
+        border: 1px solid var(--brighterBlue);
+        color: #fff;
+    }
+
+
+.button-blue-outline {
+    background: #fff;
+    color: var(--brightBlue);
+    border: 1px solid var(--brightBlue);
+}
+
+    .button-blue-outline:hover,
+    .button-blue-outline:active {
+        background: var(--brighterBlue);
+        border-color: var(--brighterBlue);
+        color: #fff;
+    }
+
+.button-red {
+    background: var(--red);
+    border-color: var(--red);
+    color: #fff;
+}
+
+    .button-red:hover,
+    .button-red:active {
+        background: var(--brightRed);
+        border-color: var(--brightRed);
+        color: #fff;
+    }
+
+.button-red-outline {
+    background: #fff;
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+
+    .button-red-outline:hover,
+    .button-red-outline:active {
+        background: var(--brightRed);
+        border-color: var(--brightRed);
+        color: #fff;
+    }
+
+
+
+.button-yellow {
+    background: var(--yellow);
+    color: #fff;
+}
+
+    .button-yellow:hover,
+    .button-yellow:active {
+        background: var(--brightYellow);
+        color: #fff;
+    }
+
+.button-no-border {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.button-link {
+    color: var(--brightBlue);
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-link-hide {
+    display: inline-block;
+    color: var(--brightBlue);
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: .25rem;
+}
